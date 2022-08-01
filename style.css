@@ -1,0 +1,182 @@
+
+p{
+    font-family: 'Roboto', Trebuchet Ms, Arial Black;
+	text-align: justify;
+    margin:auto;
+    width: 625px;
+    color: #000;
+    margin-top: 8px;
+}
+
+#bloc_page
+{
+    margin: auto;
+	height: 550px;
+    justify-content: center;
+}
+
+header{
+    background-color: navy;
+    border: 0.5px navy solid;
+    height: 150px;
+    justify-content: center;
+}
+
+header h1{
+    color: white;
+    text-align: center;
+    font-size: 3.2em;
+}
+
+header p{
+    color:gold;
+    text-align: center;
+    font-size: 1.2em;
+}
+/*==================================================*/
+/*Menu de navigation*/
+nav{
+    width: 100%;
+    margin: 0 auto;
+    background-color: navy;
+    position:sticky;
+    top: 0px;
+}
+nav, ul, li, a
+{
+    font-family: 'Roboto', Trebuchet Ms, Arial Black;
+ 	display: flex;
+    justify-content: center;
+ 	margin-right:15px;
+}
+
+nav ul li{
+    float: left;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    display: flex;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color:white;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: orange;
+    border-bottom: 2px solid gold;
+}
+
+nav > ul li:hover .sous_menu{
+    display: block;
+}
+
+.sous_menu a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous_menu a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+
+/*================================================*/
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Roboto bold', sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #873e34;
+}
+
+#foot
+{
+    background-color:#873e34;
+    border: 0.1px #873e34 solid;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    position: absolute;
+    top:350px;
+    position:relative;
+    margin: auto;
+
+}
+
+#foot h1
+{
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+#accueil, #biographie, #activite_pro, #certif, #contact, #loisir, #etude{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#etude h1, #biographie h1, #biographie ol, li, 
+#biographie ul, li, #certif h1, h2, #certif ul, li, 
+#contact h1, #loisir h1, #activite_pro h1, #accueil h1,
+#activite_pro ul, li {
+    margin:auto;
+    width: 625px;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+table{
+    border-collapse: collapse;
+    font-family: 'Roboto bold', sans-serif;
+    border-width:2px; 
+    border-style:solid; 
+    border-color:black;
+    width:30%;
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 5px;
+    width:5%;
+}
+
+.photo {
+    height:340px;
+    margin:auto;
+    width: 298px;
+    float: left;
+    margin-left: 444px;
+}
+img {
+    width: auto; 
+    max-height: 100%; 
+}
+
+#images{
+    height:320px;
+    margin:auto;
+    width: 350px;
+    margin-left: 444px;
+}
+
+.images
+{
+    height:320px;
+    margin:auto;
+    width: 290px;
+    margin-left: 444px;
+}
